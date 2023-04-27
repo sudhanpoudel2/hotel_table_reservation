@@ -1,0 +1,12 @@
+#home-div {
+    height: 100vh;
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+}
+
+@media screen and (max-width: 1024px) {
+    #home-div {
+        height: 70vh;
+    }
+  }

@@ -1,0 +1,134 @@
+body {
+  background: #F6F2EC;
+}
+
+.get-started-btn {
+  background: #004194;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.get-started-btn:hover {
+  color: #fff;
+  border: #fff;
+}
+
+.register-img {
+  object-fit: contain;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #004194;
+  border-color: #004194;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.text-primary {
+  color: #004194 !important;
+}
+
+.login-link {
+  color: #F6F2EC;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #004194;
+}
+
+
+
+.btn-secondary {
+  color: #F6F2EC;
+  background-color: #EE6A3E;
+  border-color: #EE6A3E;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.btn-secondary:hover {
+  background-color: #c56241;
+  border-color: #c56241;
+}
+
+.bg-secondary {
+  background-color: #ACC9DC !important;
+}
+
+.buttonsList .btn-outline-primary {
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: #004194;
+  border-color: #004194;
+}
+
+.buttonsList .btn-outline-primary:hover {
+  background-color: #004194;
+  color: #fff;
+}
+
+.buttonsList .btn-outline-danger {
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: #EE6A3E;
+  border-color: #EE6A3E;
+}
+
+.buttonsList .btn-outline-danger:hover {
+  background-color: #EE6A3E;
+  color: #fff;
+}
+
+div.scrollmenu {
+  /* background-color: red; */
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu button {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.text-dark {
+  color: #041838 !important;
+}
+
+.dropdown-container {
+  border-radius: 50rem!important;
+}
+
+.dropdown-heading {
+  border-radius: 50rem!important;
+  padding: 0px 25px !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+  margin-top: 5px;
+  display: block;
+}
+
+.invalid {
+  border: 1px solid red;
+}

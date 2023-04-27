@@ -1,0 +1,64 @@
+/* input checkbox */
+input.apple-switch {
+    position: relative;
+    -webkit-appearance: none;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ACC9DC;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #ACC9DC;
+  }
+  
+  input.apple-switch:checked {
+    box-shadow: inset 20px 0 0 0 #ffbc41 !important;
+    border-color: #ffbc41 !important;
+  }
+  
+  [type="file"] {
+    color: #041838 ;
+  }
+  
+  [type="file"]::-webkit-file-upload-button {
+    background: #b2bac0;
+    border: 2px solid #b2bac0;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    padding: 5px;
+    text-transform: uppercase;
+    transition: all 1s ease;
+  }
+
+  textarea.form-control {
+    height: auto !important;
+    border-radius: 25px !important;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 50rem!important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  select.form-control {
+    height: 52px;
+    color: #495057;
+  }
+  
+  .form-text {
+    color: #F6F2EC;
+  }

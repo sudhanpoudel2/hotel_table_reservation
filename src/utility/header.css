@@ -1,0 +1,31 @@
+.dropdown-toggle::after {
+    display: none;
+  }
+  
+  .profile-icon {
+    width: 35px;
+  }
+  
+  .text-spacing {
+    letter-spacing: 5px;
+  }
+
+  #header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 10px 0;
+    box-shadow: 0px 0 18px rgb(55 66 59 / 8%);
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #041838 !important;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #004194 !important;
+  }

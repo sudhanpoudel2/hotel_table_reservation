@@ -1,0 +1,35 @@
+.menu-card {
+    background-color: #fff;
+    border: none;
+    /* -webkit-box-shadow: 0 0.125rem 0.8rem rgb(0 0 0 / 10%); */
+    box-shadow: 0 0.125rem 0.8rem rgb(0 0 0 / 10%);
+    border-radius: 1rem;
+  }
+  
+  .menu-thumbnail {
+    /* background: #fcdf89; */
+    height: 175px;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+
+  .signin-card {
+    background: #EE6A3E;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 10%);
+  }
+  
+  
+  
+  .add-table-card, .add-item-card, .profile-card {
+    background: #ACC9DC;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(172, 201, 220, 10%);
+    color: #041838;
+  }

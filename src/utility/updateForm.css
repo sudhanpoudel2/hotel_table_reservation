@@ -1,0 +1,16 @@
+.updateFormContainer {
+    /* font-size: 13px; */
+    border-right: 1px solid #8e9aaa;
+    margin-right: 15px;
+    padding-right: 15px;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .updateFormContainer {
+      /* font-size: 13px; */
+      border-bottom: 1px solid #8e9aaa;
+      border-right: 0;
+      margin-bottom: 15px;
+      padding-right: 15px;
+    }
+  }
