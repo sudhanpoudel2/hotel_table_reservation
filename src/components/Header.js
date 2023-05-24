@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import { useContext } from "react"
 import { UserContext, UserTypeContext } from "../App";
 import { BASE_URL } from '../utility/base_url';
+import logo from '../images/logo.png'
 
 const Header = () => {
     const {state, dispatch} = useContext(UserContext);
@@ -137,7 +138,7 @@ const Header = () => {
                 <div class="container">
                     <Link to="/">
                     <a class="navbar-brand text-dark order-sm-1" href="#">
-                        <img src={project_logo} className="img-fluid rounded-circle" width="60" />
+                        <img src={logo} className="img-fluid rounded-circle" width="60" />
                     </a>
                     </Link>
                     <div className='d-flex order-lg-3 order-sm-2'>

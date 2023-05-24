@@ -25,6 +25,7 @@ const BookTable = () => {
     const [total_seats, setTotalSeats] = useState('')
     const [table, setTable] = useState(tid)
     const [user, setUser] = useState(localStorage.getItem('userId'))
+    console.log("tale seat", total_seats);
 
     useEffect(() => {
         const get_url = BASE_URL + `/table/${tid}`
@@ -37,6 +38,7 @@ const BookTable = () => {
             setTableNo(data.table_number)
             setMinCapacity(data.min_capacity)
             setMaxCapacity(data.max_capacity)
+       
         })
         .catch(e => {
             console.log(e)
@@ -61,27 +63,38 @@ const BookTable = () => {
 
         let submit_url = BASE_URL + "/book/table"
 
-        axios.post(submit_url, bookingData, getAxiosConfig())
+        if(total_seats >= min_capacity && total_seats <= max_capacity){
+            axios.post(submit_url, bookingData, getAxiosConfig())
         .then(result => {
-            if (result.data.success) {
-                document.getElementById("BookingForm").reset();
-                toast.success(result.data.message, {
-                    hideProgressBar: true
-                });
-                
-                
-            } else {
-                toast.error(result.data.message, {
-                    hideProgressBar: true
-                });
-            }
+            console.log("data is", result)
+           
+                if (result.data.success) {
+                    document.getElementById("BookingForm").reset();
+                    toast.success(result.data.message, {
+                        hideProgressBar: true
+                    });
+                    
+                    
+                } else {
+                    toast.error(result.data.message, {
+                        hideProgressBar: true
+                    });
+                }
+          
+            
         })
         .catch(err => {
-            console.log(err)
+            console.log("errrrrrrr", err)
             toast.error("Unable to submit", {
                 hideProgressBar: true
             });
         })
+        }else{
+            toast.error("Please check the seating capacity", {
+                hideProgressBar: true
+            });
+        }
+        
     }
 
     const goBack = (e) => {

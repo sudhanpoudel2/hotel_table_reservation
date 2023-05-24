@@ -1,4 +1,5 @@
 import project_logo from '../images/project_logo.jpg'
+import logo from "../images/logo.png"
 
 const Footer = () => {
     return(
@@ -8,7 +9,7 @@ const Footer = () => {
                 <div class="row d-flex justify-content-between">
                   <div class="col-lg-3 col-md-6">
                     <section class="widget widget-light-skin">
-                      <img src={project_logo} className="img-fluid rounded-circle" width="100" height="100" />
+                      <img src={logo} className="img-fluid rounded-circle" width="100" height="100" />
                       <p className='text-white h3 text-light'>Restaurant Bookings</p>
                     </section>
                   </div>
@@ -16,8 +17,7 @@ const Footer = () => {
                     <section class="widget widget-light-skin">
                       <h3 class="widget-title">About Us</h3>
                       <p class="text-white">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                      </p>
+                      A restaurant is a business formation which prepares and serves food and drink to customers in return for money, either paid before the meal, after the meal, or with a running tab. Meals are generally served and eaten on premises.                      </p>
                       {/* <ul class="list-unstyled text-sm text-white">
                         <li><span class="opacity-50">Monday-Friday:</span>9.00 am - 8.00 pm</li>
                         <li><span class="opacity-50">Saturday:</span>10.00 am - 6.00 pm</li>

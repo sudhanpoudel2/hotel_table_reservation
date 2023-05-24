@@ -39,7 +39,7 @@ const UpdateTable = () => {
         let put_url = BASE_URL + `/table/update/${tid}`
         axios.put(put_url, tableData, getAxiosConfig())
         .then(result => {
-            if (result.data.success) {
+            if (result.data.success ) {
                 toast.success(result.data.message, {
                     hideProgressBar: true
                 });
